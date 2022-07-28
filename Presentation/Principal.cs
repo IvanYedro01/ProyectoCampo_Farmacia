@@ -81,6 +81,9 @@ namespace Presentation
         private void btnBitacora_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Bitacora());
+            pictureBox10.Hide();
+            lblFecha.Visible = false;
+            lblHora.Visible = false;
 
         }
 
@@ -99,17 +102,26 @@ namespace Presentation
         private void btnRegistrar_Usuario_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Gestionar_Usuarios());
+            pictureBox10.Hide();
+            lblFecha.Visible = false;
+            lblHora.Visible = false;
         }
 
 
         private void btnStock_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Stock());
+            pictureBox10.Hide();
+            lblFecha.Visible = false;
+            lblHora.Visible = false;
         }
 
         private void btnGestionarClientes_Click(object sender, EventArgs e)
         {
             AbrirFormInPanel(new Gestionar_Clientes());
+            pictureBox10.Hide();
+            lblFecha.Visible = false;
+            lblHora.Visible = false;
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -127,6 +139,14 @@ namespace Presentation
         {
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new Ventas());
+            pictureBox10.Hide();
+            lblFecha.Visible = false;
+            lblHora.Visible = false;
         }
     }
 }

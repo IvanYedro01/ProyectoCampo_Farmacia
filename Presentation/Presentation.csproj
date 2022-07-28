@@ -52,6 +52,11 @@
     <Compile Include="Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="farmaciaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>farmaciaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Gestionar_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +104,12 @@
     <Compile Include="Stock.Designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +146,20 @@
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="farmaciaDataSet.xsc">
+      <DependentUpon>farmaciaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="farmaciaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>farmaciaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="farmaciaDataSet.xss">
+      <DependentUpon>farmaciaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="farmaciaDataSet1.xsc">
       <DependentUpon>farmaciaDataSet1.xsd</DependentUpon>
     </None>

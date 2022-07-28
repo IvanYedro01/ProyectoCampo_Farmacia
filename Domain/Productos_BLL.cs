@@ -30,5 +30,10 @@ namespace Domain
         {
             objetoCD.Eliminar(Convert.ToInt32(id));
         }
+
+        public void ActualizarProd(string stock, string id)
+        {
+            objetoCD.Actualizar(Convert.ToInt32(stock), Convert.ToInt32(id));
+        }
     }
 }

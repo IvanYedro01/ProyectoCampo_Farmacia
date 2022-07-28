@@ -67,5 +67,14 @@ namespace DataAcces
             comando.Parameters.Clear();
             conexion.Desconectar();
         }
+
+        public DataTable CargarCombo()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("CargarCombobox", conexion.Conectar());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

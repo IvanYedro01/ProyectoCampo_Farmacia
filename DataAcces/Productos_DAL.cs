@@ -67,5 +67,17 @@ namespace DataAcces
             comando.Parameters.Clear();
             conexion.Desconectar();
         }
+
+        public void Actualizar(int stock, int id)
+        {
+            comando.Connection = conexion.Conectar();
+            comando.CommandText = "ActualizarStock";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@stock", stock);
+            comando.Parameters.AddWithValue("@id", id);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            conexion.Desconectar();
+        }
     }
 }
