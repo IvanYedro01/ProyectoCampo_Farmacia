@@ -55,6 +55,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtCantidadVender = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.farmaciaDataSet)).BeginInit();
@@ -72,7 +82,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 30);
+            this.label1.Location = new System.Drawing.Point(182, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 1;
@@ -89,14 +99,14 @@
             this.cmbCliente.Items.AddRange(new object[] {
             "administrador",
             "vendedor"});
-            this.cmbCliente.Location = new System.Drawing.Point(227, 30);
+            this.cmbCliente.Location = new System.Drawing.Point(227, 11);
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(96, 24);
             this.cmbCliente.TabIndex = 7;
             // 
             // btnSeleccionarCliente
             // 
-            this.btnSeleccionarCliente.Location = new System.Drawing.Point(227, 60);
+            this.btnSeleccionarCliente.Location = new System.Drawing.Point(227, 41);
             this.btnSeleccionarCliente.Name = "btnSeleccionarCliente";
             this.btnSeleccionarCliente.Size = new System.Drawing.Size(75, 37);
             this.btnSeleccionarCliente.TabIndex = 8;
@@ -116,9 +126,9 @@
             this.precioDataGridViewTextBoxColumn,
             this.stockDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(329, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(329, 10);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(261, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(459, 88);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -171,82 +181,77 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.BackColor = System.Drawing.Color.LightGray;
+            this.txtCliente.BackColor = System.Drawing.Color.White;
             this.txtCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCliente.Location = new System.Drawing.Point(616, 30);
+            this.txtCliente.Location = new System.Drawing.Point(277, 149);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.ReadOnly = true;
             this.txtCliente.Size = new System.Drawing.Size(107, 19);
             this.txtCliente.TabIndex = 27;
-            this.txtCliente.Text = "Cliente";
             // 
             // txtCodProducto
             // 
-            this.txtCodProducto.BackColor = System.Drawing.Color.LightGray;
+            this.txtCodProducto.BackColor = System.Drawing.Color.White;
             this.txtCodProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodProducto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodProducto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCodProducto.Location = new System.Drawing.Point(616, 60);
+            this.txtCodProducto.Location = new System.Drawing.Point(277, 175);
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.ReadOnly = true;
             this.txtCodProducto.Size = new System.Drawing.Size(107, 19);
             this.txtCodProducto.TabIndex = 28;
-            this.txtCodProducto.Text = "Cod Producto";
             // 
             // txtPrecioUnitario
             // 
-            this.txtPrecioUnitario.BackColor = System.Drawing.Color.LightGray;
+            this.txtPrecioUnitario.BackColor = System.Drawing.Color.White;
             this.txtPrecioUnitario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPrecioUnitario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioUnitario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPrecioUnitario.Location = new System.Drawing.Point(616, 163);
+            this.txtPrecioUnitario.Location = new System.Drawing.Point(277, 282);
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
             this.txtPrecioUnitario.ReadOnly = true;
             this.txtPrecioUnitario.Size = new System.Drawing.Size(107, 19);
             this.txtPrecioUnitario.TabIndex = 29;
-            this.txtPrecioUnitario.Text = "Precio Unitario";
             // 
             // txtCantidad
             // 
-            this.txtCantidad.BackColor = System.Drawing.Color.LightGray;
+            this.txtCantidad.BackColor = System.Drawing.Color.White;
             this.txtCantidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCantidad.Location = new System.Drawing.Point(616, 188);
+            this.txtCantidad.Location = new System.Drawing.Point(277, 307);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.ReadOnly = true;
-            this.txtCantidad.Size = new System.Drawing.Size(151, 19);
+            this.txtCantidad.Size = new System.Drawing.Size(107, 19);
             this.txtCantidad.TabIndex = 30;
-            this.txtCantidad.Text = "Cantidad Disponible";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.LightGray;
+            this.txtDescripcion.BackColor = System.Drawing.Color.White;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDescripcion.Location = new System.Drawing.Point(616, 113);
+            this.txtDescripcion.Location = new System.Drawing.Point(277, 232);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
             this.txtDescripcion.Size = new System.Drawing.Size(107, 19);
             this.txtDescripcion.TabIndex = 31;
-            this.txtDescripcion.Text = "Descripcion";
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(648, 253);
+            this.btnConfirmar.Location = new System.Drawing.Point(410, 372);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 37);
             this.btnConfirmar.TabIndex = 33;
-            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.Text = "Confirmar Venta";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnCalcularTotal
             // 
-            this.btnCalcularTotal.Location = new System.Drawing.Point(550, 253);
+            this.btnCalcularTotal.Location = new System.Drawing.Point(186, 372);
             this.btnCalcularTotal.Name = "btnCalcularTotal";
             this.btnCalcularTotal.Size = new System.Drawing.Size(75, 37);
             this.btnCalcularTotal.TabIndex = 34;
@@ -260,63 +265,161 @@
             // 
             // txtProducto
             // 
-            this.txtProducto.BackColor = System.Drawing.Color.LightGray;
+            this.txtProducto.BackColor = System.Drawing.Color.White;
             this.txtProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtProducto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProducto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtProducto.Location = new System.Drawing.Point(616, 85);
+            this.txtProducto.Location = new System.Drawing.Point(277, 203);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(140, 19);
+            this.txtProducto.Size = new System.Drawing.Size(107, 19);
             this.txtProducto.TabIndex = 35;
-            this.txtProducto.Text = "Nombre Producto";
             // 
             // txtMarca
             // 
-            this.txtMarca.BackColor = System.Drawing.Color.LightGray;
+            this.txtMarca.BackColor = System.Drawing.Color.White;
             this.txtMarca.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMarca.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMarca.Location = new System.Drawing.Point(616, 138);
+            this.txtMarca.Location = new System.Drawing.Point(277, 257);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.ReadOnly = true;
             this.txtMarca.Size = new System.Drawing.Size(107, 19);
             this.txtMarca.TabIndex = 37;
-            this.txtMarca.Text = "Marca";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(541, 318);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(274, 372);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 38;
             this.label2.Text = "Total    $";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(598, 318);
+            this.lblTotal.Location = new System.Drawing.Point(331, 372);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 39;
             // 
             // txtCantidadVender
             // 
-            this.txtCantidadVender.BackColor = System.Drawing.Color.LightGray;
+            this.txtCantidadVender.BackColor = System.Drawing.Color.White;
             this.txtCantidadVender.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCantidadVender.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadVender.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCantidadVender.Location = new System.Drawing.Point(616, 213);
+            this.txtCantidadVender.Location = new System.Drawing.Point(277, 332);
             this.txtCantidadVender.Name = "txtCantidadVender";
-            this.txtCantidadVender.Size = new System.Drawing.Size(151, 19);
+            this.txtCantidadVender.Size = new System.Drawing.Size(107, 19);
             this.txtCantidadVender.TabIndex = 40;
-            this.txtCantidadVender.Text = "Cantidad a vender";
+            this.txtCantidadVender.Click += new System.EventHandler(this.txtCantidadVender_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(186, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Cliente";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(186, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Cod Producto";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(186, 203);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Producto";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(186, 231);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Descripcion";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(186, 257);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Marca";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(186, 282);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "Precio U.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(186, 307);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 13);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Cant Disponible";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(186, 332);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 13);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Cant a Vender";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(277, 123);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(107, 20);
+            this.dateTimePicker1.TabIndex = 49;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(186, 123);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 13);
+            this.label11.TabIndex = 50;
+            this.label11.Text = "Fecha";
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCantidadVender);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
@@ -374,5 +477,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtCantidadVender;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label11;
     }
 }

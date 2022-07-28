@@ -25,6 +25,8 @@ namespace Presentation
 
         Productos_BLL prod = new Productos_BLL();
 
+        Ventas_DAL ventas = new Ventas_DAL();
+
         private void Ventas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'farmaciaDataSet.Productos' Puede moverla o quitarla según sea necesario.
@@ -32,6 +34,9 @@ namespace Presentation
             cmbCliente.DataSource = cl.CargarCombo();
             cmbCliente.DisplayMember = "Telefono";
             cmbCliente.ValueMember = "Id";
+
+            btnConfirmar.Enabled = false;
+            btnCalcularTotal.Enabled = false;
 
         }
 
@@ -63,6 +68,8 @@ namespace Presentation
             double total =Convert.ToDouble( txtPrecioUnitario.Text) * Convert.ToDouble (txtCantidad.Text);
             lblTotal.Text = Convert.ToString(total);
 
+
+            btnConfirmar.Enabled = true;
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -72,14 +79,39 @@ namespace Presentation
 
             double resta = cantidad - cantidadVenta;
 
-            if (resta > 0) 
-            { 
-              prod.ActualizarProd(Convert.ToString(resta), txtCodProducto.Text);
+            if (cantidadVenta>0)
+            {
+                if (resta >= 0)
+                {
+                    prod.ActualizarProd(Convert.ToString(resta), txtCodProducto.Text);
+
+                    ventas.Insertar(dateTimePicker1.Value.ToString("yyyy-MM-dd"), txtCliente.Text, txtCodProducto.Text, txtProducto.Text, txtDescripcion.Text, txtMarca.Text, Convert.ToDouble(txtPrecioUnitario.Text), Convert.ToInt32(txtCantidadVender.Text), Convert.ToDouble(lblTotal.Text));
+
+                    MessageBox.Show("Se ha registrado la venta");
+
+                    txtCantidad.Clear();
+                    txtCantidadVender.Clear();
+
+                    btnConfirmar.Enabled = false;
+                    btnCalcularTotal.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("No hay suficiente stock");
+                }
             }
             else
             {
                 MessageBox.Show("No hay suficiente stock");
+                btnCalcularTotal.Enabled = false;
+                btnConfirmar.Enabled = false;
+
             }
+        }
+
+        private void txtCantidadVender_Click(object sender, EventArgs e)
+        {
+            btnCalcularTotal.Enabled = true;
         }
     }
 }
