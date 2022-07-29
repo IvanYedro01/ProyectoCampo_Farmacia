@@ -87,6 +87,8 @@ namespace Presentation
 
         private void Gestionar_Clientes_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'farmaciaDataSet3.Clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.farmaciaDataSet3.Clientes);
             MostrarClientes();
         }
 

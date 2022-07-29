@@ -44,6 +44,8 @@ namespace Presentation
 
         private void Stock_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'farmaciaDataSet2.Productos' Puede moverla o quitarla según sea necesario.
+            this.productosTableAdapter.Fill(this.farmaciaDataSet2.Productos);
             MostrarProdctos();
         }
 
@@ -92,7 +94,7 @@ namespace Presentation
                 txtMarca.Text = dataGridView1.CurrentRow.Cells["Marca"].Value.ToString();
                 txtDescripcion.Text = dataGridView1.CurrentRow.Cells["Descripcion"].Value.ToString();
                 txtPrecio.Text = dataGridView1.CurrentRow.Cells["Precio"].Value.ToString();
-                txtStock.Text = dataGridView1.CurrentRow.Cells["Stock"].Value.ToString();
+                txtStock.Text = dataGridView1.CurrentRow.Cells["Stockk"].Value.ToString();
                 idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
             }
             else
@@ -121,5 +123,7 @@ namespace Presentation
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+      
     }
 }

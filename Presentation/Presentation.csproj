@@ -57,6 +57,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>farmaciaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="farmaciaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>farmaciaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="farmaciaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>farmaciaDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Gestionar_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +180,28 @@
     </None>
     <None Include="farmaciaDataSet1.xss">
       <DependentUpon>farmaciaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="farmaciaDataSet2.xsc">
+      <DependentUpon>farmaciaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="farmaciaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>farmaciaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="farmaciaDataSet2.xss">
+      <DependentUpon>farmaciaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="farmaciaDataSet3.xsc">
+      <DependentUpon>farmaciaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="farmaciaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>farmaciaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="farmaciaDataSet3.xss">
+      <DependentUpon>farmaciaDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

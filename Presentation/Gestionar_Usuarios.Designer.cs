@@ -54,7 +54,7 @@
             // 
             // cmbposition
             // 
-            this.cmbposition.BackColor = System.Drawing.Color.LightGray;
+            this.cmbposition.BackColor = System.Drawing.Color.White;
             this.cmbposition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbposition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbposition.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,46 +210,43 @@
             // 
             // txtemail
             // 
-            this.txtemail.BackColor = System.Drawing.Color.LightGray;
+            this.txtemail.BackColor = System.Drawing.Color.White;
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtemail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.ForeColor = System.Drawing.Color.DimGray;
+            this.txtemail.ForeColor = System.Drawing.Color.Black;
             this.txtemail.Location = new System.Drawing.Point(158, 261);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(206, 19);
             this.txtemail.TabIndex = 20;
-            this.txtemail.Text = "Email";
             // 
             // txtlastName
             // 
-            this.txtlastName.BackColor = System.Drawing.Color.LightGray;
+            this.txtlastName.BackColor = System.Drawing.Color.White;
             this.txtlastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtlastName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlastName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtlastName.ForeColor = System.Drawing.Color.Black;
             this.txtlastName.Location = new System.Drawing.Point(158, 173);
             this.txtlastName.Name = "txtlastName";
             this.txtlastName.Size = new System.Drawing.Size(206, 19);
             this.txtlastName.TabIndex = 19;
-            this.txtlastName.Text = "LastName";
             // 
             // txtfirstName
             // 
-            this.txtfirstName.BackColor = System.Drawing.Color.LightGray;
+            this.txtfirstName.BackColor = System.Drawing.Color.White;
             this.txtfirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtfirstName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfirstName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtfirstName.ForeColor = System.Drawing.Color.Black;
             this.txtfirstName.Location = new System.Drawing.Point(158, 129);
             this.txtfirstName.Name = "txtfirstName";
             this.txtfirstName.Size = new System.Drawing.Size(206, 19);
             this.txtfirstName.TabIndex = 18;
-            this.txtfirstName.Text = "FirstName";
             // 
             // txtpassword
             // 
-            this.txtpassword.BackColor = System.Drawing.Color.LightGray;
+            this.txtpassword.BackColor = System.Drawing.Color.White;
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtpassword.ForeColor = System.Drawing.Color.Black;
             this.txtpassword.Location = new System.Drawing.Point(158, 94);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
@@ -259,15 +256,14 @@
             // 
             // txtloginName
             // 
-            this.txtloginName.BackColor = System.Drawing.Color.LightGray;
+            this.txtloginName.BackColor = System.Drawing.Color.White;
             this.txtloginName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtloginName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtloginName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtloginName.ForeColor = System.Drawing.Color.Black;
             this.txtloginName.Location = new System.Drawing.Point(158, 58);
             this.txtloginName.Name = "txtloginName";
             this.txtloginName.Size = new System.Drawing.Size(206, 19);
             this.txtloginName.TabIndex = 16;
-            this.txtloginName.Text = "LoginName";
             // 
             // Gestionar_Usuarios
             // 
