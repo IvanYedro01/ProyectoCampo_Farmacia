@@ -44,5 +44,10 @@ namespace Presentation
             this.bitacoraTableAdapter1.Fill(this.farmaciaDataSet1.bitacora);
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

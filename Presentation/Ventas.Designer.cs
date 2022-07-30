@@ -657,17 +657,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCliente;
-        private System.Windows.Forms.Button btnSeleccionarCliente;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.TextBox txtCodProducto;
         private System.Windows.Forms.TextBox txtPrecioUnitario;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button btnAgregarProductos;
-        private System.Windows.Forms.Button btnCalcularTotal;
         private farmaciaDataSet farmaciaDataSet;
         private System.Windows.Forms.BindingSource productosBindingSource;
         private farmaciaDataSetTableAdapters.ProductosTableAdapter productosTableAdapter;
@@ -679,21 +674,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stockDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtCantidadVender;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnConfirmarVenta;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -705,8 +687,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnConsultarTotal;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button btnSeleccionarCliente;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Button btnAgregarProductos;
+        public System.Windows.Forms.Button btnCalcularTotal;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblTotal;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Button btnConfirmarVenta;
+        public System.Windows.Forms.Button btnConsultarTotal;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView2;
     }
 }

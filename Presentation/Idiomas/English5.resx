@@ -117,40 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnGestionarClientes" xml:space="preserve">
-    <value>Gestionar Clientes</value>
+  <data name="btnAgregarProductos" xml:space="preserve">
+    <value>Add Products</value>
   </data>
-  <data name="btnGestionar_Usuarios" xml:space="preserve">
-    <value>Gestionar Usuarios</value>
+  <data name="btnCalcularTotal" xml:space="preserve">
+    <value>Calculate Subtotal</value>
   </data>
-  <data name="btnLogin" xml:space="preserve">
-    <value>Acceder</value>
+  <data name="btnConfirmarVenta" xml:space="preserve">
+    <value>Confirm Sale</value>
   </data>
-  <data name="btnLogout" xml:space="preserve">
-    <value>Cerrar Sesion</value>
+  <data name="btnConsultarTotal" xml:space="preserve">
+    <value>Consult Total</value>
   </data>
-  <data name="btnSeleccionar" xml:space="preserve">
-    <value>Seleccionar</value>
-  </data>
-  <data name="btnStock" xml:space="preserve">
-    <value>Stock</value>
-  </data>
-  <data name="button1" xml:space="preserve">
-    <value>Ventas</value>
+  <data name="btnSeleccionarCliente" xml:space="preserve">
+    <value>Select Customer</value>
   </data>
   <data name="label1" xml:space="preserve">
-    <value>Mensaje de error</value>
+    <value>Client</value>
   </data>
-  <data name="label2" xml:space="preserve">
-    <value>ACCESO</value>
+  <data name="label10" xml:space="preserve">
+    <value>Cant to Sell</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Client</value>
   </data>
   <data name="label4" xml:space="preserve">
-    <value>Idioma</value>
+    <value>Cod Product</value>
   </data>
-  <data name="labelBienvenidos" xml:space="preserve">
-    <value>Bienvenidos</value>
+  <data name="label5" xml:space="preserve">
+    <value>Product</value>
   </data>
-  <data name="txtUsername" xml:space="preserve">
-    <value>NOMBRE DE USUARIO</value>
+  <data name="label6" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Mark</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Price U.</value>
+  </data>
+  <data name="label9" xml:space="preserve">
+    <value>Cant Available</value>
   </data>
 </root>

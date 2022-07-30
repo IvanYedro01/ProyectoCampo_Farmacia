@@ -89,10 +89,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>English.resx</DependentUpon>
     </Compile>
+    <Compile Include="Idiomas\English2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\English3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\English4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English4.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\English5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English5.resx</DependentUpon>
+    </Compile>
     <Compile Include="Idiomas\Español.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Español.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\Español2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Español2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\Español3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Español3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\Español4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Español4.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\Español5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Español5.resx</DependentUpon>
     </Compile>
     <Compile Include="Log in.cs">
       <SubType>Form</SubType>
@@ -133,9 +173,41 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>English.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\English2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\English3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\English4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\English5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English5.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Idiomas\Español.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Español.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\Español2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Español2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\Español3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Español3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\Español4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Español4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\Español5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Español5.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>

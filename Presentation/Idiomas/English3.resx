@@ -117,40 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnGestionarClientes" xml:space="preserve">
-    <value>Gestionar Clientes</value>
-  </data>
-  <data name="btnGestionar_Usuarios" xml:space="preserve">
-    <value>Gestionar Usuarios</value>
-  </data>
-  <data name="btnLogin" xml:space="preserve">
-    <value>Acceder</value>
-  </data>
-  <data name="btnLogout" xml:space="preserve">
-    <value>Cerrar Sesion</value>
-  </data>
-  <data name="btnSeleccionar" xml:space="preserve">
-    <value>Seleccionar</value>
-  </data>
-  <data name="btnStock" xml:space="preserve">
-    <value>Stock</value>
-  </data>
-  <data name="button1" xml:space="preserve">
-    <value>Ventas</value>
+  <data name="btnSignIn" xml:space="preserve">
+    <value>Sign In</value>
   </data>
   <data name="label1" xml:space="preserve">
-    <value>Mensaje de error</value>
+    <value>Login name</value>
   </data>
   <data name="label2" xml:space="preserve">
-    <value>ACCESO</value>
+    <value>Password</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="label4" xml:space="preserve">
-    <value>Idioma</value>
+    <value>Last name</value>
   </data>
-  <data name="labelBienvenidos" xml:space="preserve">
-    <value>Bienvenidos</value>
+  <data name="label5" xml:space="preserve">
+    <value>Position</value>
   </data>
-  <data name="txtUsername" xml:space="preserve">
-    <value>NOMBRE DE USUARIO</value>
+  <data name="label6" xml:space="preserve">
+    <value>Email</value>
   </data>
 </root>

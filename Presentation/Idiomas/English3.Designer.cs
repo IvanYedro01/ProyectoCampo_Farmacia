@@ -22,14 +22,14 @@ namespace Presentation.Idiomas {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Español {
+    internal class English3 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Español() {
+        internal English3() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Presentation.Idiomas {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentation.Idiomas.Español", typeof(Español).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentation.Idiomas.English3", typeof(English3).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,70 +61,16 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Gestionar Usuarios.
+        ///   Busca una cadena traducida similar a Sign In.
         /// </summary>
-        internal static string btnGestionar_Usuarios {
+        internal static string btnSignIn {
             get {
-                return ResourceManager.GetString("btnGestionar_Usuarios", resourceCulture);
+                return ResourceManager.GetString("btnSignIn", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Gestionar Clientes.
-        /// </summary>
-        internal static string btnGestionarClientes {
-            get {
-                return ResourceManager.GetString("btnGestionarClientes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Acceder.
-        /// </summary>
-        internal static string btnLogin {
-            get {
-                return ResourceManager.GetString("btnLogin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Cerrar Sesion.
-        /// </summary>
-        internal static string btnLogout {
-            get {
-                return ResourceManager.GetString("btnLogout", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Seleccionar.
-        /// </summary>
-        internal static string btnSeleccionar {
-            get {
-                return ResourceManager.GetString("btnSeleccionar", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Stock.
-        /// </summary>
-        internal static string btnStock {
-            get {
-                return ResourceManager.GetString("btnStock", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Ventas.
-        /// </summary>
-        internal static string button1 {
-            get {
-                return ResourceManager.GetString("button1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Mensaje de error.
+        ///   Busca una cadena traducida similar a Login name.
         /// </summary>
         internal static string label1 {
             get {
@@ -133,7 +79,7 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ACCESO.
+        ///   Busca una cadena traducida similar a Password.
         /// </summary>
         internal static string label2 {
             get {
@@ -142,7 +88,16 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Idioma.
+        ///   Busca una cadena traducida similar a Name.
+        /// </summary>
+        internal static string label3 {
+            get {
+                return ResourceManager.GetString("label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Last name.
         /// </summary>
         internal static string label4 {
             get {
@@ -151,20 +106,20 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Bienvenidos.
+        ///   Busca una cadena traducida similar a Position.
         /// </summary>
-        internal static string labelBienvenidos {
+        internal static string label5 {
             get {
-                return ResourceManager.GetString("labelBienvenidos", resourceCulture);
+                return ResourceManager.GetString("label5", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a NOMBRE DE USUARIO.
+        ///   Busca una cadena traducida similar a Email.
         /// </summary>
-        internal static string txtUsername {
+        internal static string label6 {
             get {
-                return ResourceManager.GetString("txtUsername", resourceCulture);
+                return ResourceManager.GetString("label6", resourceCulture);
             }
         }
     }

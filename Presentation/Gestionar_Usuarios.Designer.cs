@@ -287,22 +287,22 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cmbposition;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSignIn;
-        private System.Windows.Forms.TextBox txtemail;
-        private System.Windows.Forms.TextBox txtlastName;
-        private System.Windows.Forms.TextBox txtfirstName;
-        private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.TextBox txtloginName;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox cmbposition;
+        public System.Windows.Forms.TextBox txtemail;
+        public System.Windows.Forms.TextBox txtlastName;
+        public System.Windows.Forms.TextBox txtfirstName;
+        public System.Windows.Forms.TextBox txtpassword;
+        public System.Windows.Forms.TextBox txtloginName;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button btnSignIn;
     }
 }

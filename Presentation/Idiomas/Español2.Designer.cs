@@ -22,14 +22,14 @@ namespace Presentation.Idiomas {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Español {
+    internal class Español2 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Español() {
+        internal Español2() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Presentation.Idiomas {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentation.Idiomas.Español", typeof(Español).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Presentation.Idiomas.Español2", typeof(Español2).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,70 +61,34 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Gestionar Usuarios.
+        ///   Busca una cadena traducida similar a Editar.
         /// </summary>
-        internal static string btnGestionar_Usuarios {
+        internal static string btnEditar {
             get {
-                return ResourceManager.GetString("btnGestionar_Usuarios", resourceCulture);
+                return ResourceManager.GetString("btnEditar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Gestionar Clientes.
+        ///   Busca una cadena traducida similar a Eliminar.
         /// </summary>
-        internal static string btnGestionarClientes {
+        internal static string btnEliminar {
             get {
-                return ResourceManager.GetString("btnGestionarClientes", resourceCulture);
+                return ResourceManager.GetString("btnEliminar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Acceder.
+        ///   Busca una cadena traducida similar a Guardar.
         /// </summary>
-        internal static string btnLogin {
+        internal static string btnGuardar {
             get {
-                return ResourceManager.GetString("btnLogin", resourceCulture);
+                return ResourceManager.GetString("btnGuardar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cerrar Sesion.
-        /// </summary>
-        internal static string btnLogout {
-            get {
-                return ResourceManager.GetString("btnLogout", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Seleccionar.
-        /// </summary>
-        internal static string btnSeleccionar {
-            get {
-                return ResourceManager.GetString("btnSeleccionar", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Stock.
-        /// </summary>
-        internal static string btnStock {
-            get {
-                return ResourceManager.GetString("btnStock", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Ventas.
-        /// </summary>
-        internal static string button1 {
-            get {
-                return ResourceManager.GetString("button1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Mensaje de error.
+        ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         internal static string label1 {
             get {
@@ -133,7 +97,7 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ACCESO.
+        ///   Busca una cadena traducida similar a Apellido.
         /// </summary>
         internal static string label2 {
             get {
@@ -142,7 +106,7 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Idioma.
+        ///   Busca una cadena traducida similar a Email.
         /// </summary>
         internal static string label4 {
             get {
@@ -151,20 +115,11 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Bienvenidos.
+        ///   Busca una cadena traducida similar a Telefono.
         /// </summary>
-        internal static string labelBienvenidos {
+        internal static string labelPhone {
             get {
-                return ResourceManager.GetString("labelBienvenidos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a NOMBRE DE USUARIO.
-        /// </summary>
-        internal static string txtUsername {
-            get {
-                return ResourceManager.GetString("txtUsername", resourceCulture);
+                return ResourceManager.GetString("labelPhone", resourceCulture);
             }
         }
     }
