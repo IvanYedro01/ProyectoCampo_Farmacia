@@ -89,7 +89,7 @@
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(155, 40);
             this.btnSignIn.TabIndex = 5;
-            this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.Text = "Registrar";
             this.btnSignIn.UseVisualStyleBackColor = true;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
             // 
@@ -141,6 +141,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(645, 450);
             this.panel2.TabIndex = 16;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label6
             // 
@@ -160,9 +161,9 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(49, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Position";
+            this.label5.Text = "Posicion";
             // 
             // label4
             // 
@@ -171,9 +172,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(49, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
+            this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 24;
-            this.label4.Text = "LastName";
+            this.label4.Text = "Apellido";
             // 
             // label3
             // 
@@ -182,9 +183,9 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(49, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.Size = new System.Drawing.Size(61, 17);
             this.label3.TabIndex = 23;
-            this.label3.Text = "FirstName";
+            this.label3.Text = "Nombre";
             // 
             // label2
             // 
@@ -193,9 +194,9 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(49, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(84, 17);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Password";
+            this.label2.Text = "Contraseña";
             // 
             // label1
             // 
@@ -204,9 +205,9 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(49, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.Size = new System.Drawing.Size(120, 17);
             this.label1.TabIndex = 21;
-            this.label1.Text = "LoginName";
+            this.label1.Text = "Nombre de inicio";
             // 
             // txtemail
             // 
@@ -260,9 +261,9 @@
             this.txtloginName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtloginName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtloginName.ForeColor = System.Drawing.Color.Black;
-            this.txtloginName.Location = new System.Drawing.Point(158, 58);
+            this.txtloginName.Location = new System.Drawing.Point(175, 58);
             this.txtloginName.Name = "txtloginName";
-            this.txtloginName.Size = new System.Drawing.Size(206, 19);
+            this.txtloginName.Size = new System.Drawing.Size(189, 19);
             this.txtloginName.TabIndex = 16;
             // 
             // Gestionar_Usuarios

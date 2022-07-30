@@ -61,6 +61,15 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Acceder.
+        /// </summary>
+        internal static string btnLogin {
+            get {
+                return ResourceManager.GetString("btnLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Seleccionar.
         /// </summary>
         internal static string btnSeleccionar {

@@ -37,11 +37,15 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stockk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.farmaciaDataSet2 = new Presentation.farmaciaDataSet2();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -52,12 +56,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stockk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -162,6 +162,48 @@
             this.dataGridView1.Size = new System.Drawing.Size(586, 174);
             this.dataGridView1.TabIndex = 10;
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Marca
+            // 
+            this.Marca.DataPropertyName = "Marca";
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            this.Marca.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.DataPropertyName = "Precio";
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Stockk
+            // 
+            this.Stockk.DataPropertyName = "Stock";
+            this.Stockk.HeaderText = "Stock";
+            this.Stockk.Name = "Stockk";
+            this.Stockk.ReadOnly = true;
+            // 
             // productosBindingSource
             // 
             this.productosBindingSource.DataMember = "Productos";
@@ -182,28 +224,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(93, 19);
             this.txtNombre.TabIndex = 1;
-            // 
-            // txtStock
-            // 
-            this.txtStock.BackColor = System.Drawing.Color.White;
-            this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStock.ForeColor = System.Drawing.Color.Black;
-            this.txtStock.Location = new System.Drawing.Point(259, 185);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(93, 19);
-            this.txtStock.TabIndex = 5;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.BackColor = System.Drawing.Color.White;
-            this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.ForeColor = System.Drawing.Color.Black;
-            this.txtPrecio.Location = new System.Drawing.Point(259, 144);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(93, 19);
-            this.txtPrecio.TabIndex = 4;
             // 
             // txtMarca
             // 
@@ -302,47 +322,27 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "Stock";
             // 
-            // Id
+            // txtPrecio
             // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
+            this.txtPrecio.BackColor = System.Drawing.Color.White;
+            this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.ForeColor = System.Drawing.Color.Black;
+            this.txtPrecio.Location = new System.Drawing.Point(259, 149);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(93, 19);
+            this.txtPrecio.TabIndex = 4;
             // 
-            // Nombre
+            // txtStock
             // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Marca
-            // 
-            this.Marca.DataPropertyName = "Marca";
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            this.Marca.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.DataPropertyName = "Precio";
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Stockk
-            // 
-            this.Stockk.DataPropertyName = "Stock";
-            this.Stockk.HeaderText = "Stock";
-            this.Stockk.Name = "Stockk";
-            this.Stockk.ReadOnly = true;
+            this.txtStock.BackColor = System.Drawing.Color.White;
+            this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStock.ForeColor = System.Drawing.Color.Black;
+            this.txtStock.Location = new System.Drawing.Point(259, 190);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(93, 19);
+            this.txtStock.TabIndex = 5;
             // 
             // Stock
             // 
@@ -350,6 +350,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtStock);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -359,8 +361,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
@@ -384,8 +384,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtStock;
-        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnEditar;
@@ -407,5 +405,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stockk;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtStock;
     }
 }

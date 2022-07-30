@@ -33,10 +33,10 @@ namespace Presentation
 
         private void limpiarForm()
         {
-            txtNombre.Text = "Nombre";
-            txtApellido.Text = "Apellido";
-            txtTelefono.Text = "Telefono";
-            txtEmail.Text = "Email";
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtTelefono.Text = "";
+            txtEmail.Text = "";
            
         }
 
@@ -57,14 +57,38 @@ namespace Presentation
             {
                 try
                 {
-                    objetoCN.InsertarClientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text);
-                    MessageBox.Show("se inserto correctamente");
-                    MostrarClientes();
-                    limpiarForm();
+                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    {
+                       MessageBox.Show("Complete el nombre");
+                    }
+
+                    if (String.IsNullOrEmpty(txtApellido.Text))
+                    {
+                        MessageBox.Show("Complete el apellido");
+                    }
+
+                    if (String.IsNullOrEmpty(txtTelefono.Text))
+                    {
+                        MessageBox.Show("Complete el telefono");
+                    }
+
+                    if (String.IsNullOrEmpty(txtEmail.Text))
+                    {
+                        MessageBox.Show("Complete el email");
+                    }
+
+                    else
+                    {
+                        objetoCN.InsertarClientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text);
+                        MessageBox.Show("se inserto correctamente");
+                        MostrarClientes();
+                        limpiarForm();
+                    }
+                   
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                    MessageBox.Show("Por favor ingrese bien los datos " );
                 }
             }
             //EDITAR
@@ -72,11 +96,36 @@ namespace Presentation
             {
                 try
                 {
-                    objetoCN.EditarCLientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text, idCliente);
-                    MessageBox.Show("se edito correctamente");
-                    MostrarClientes();
-                    limpiarForm();
-                    Editar = false;
+                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    {
+                        MessageBox.Show("Complete el nombre");
+                    }
+
+                    if (String.IsNullOrEmpty(txtApellido.Text))
+                    {
+                        MessageBox.Show("Complete el apellido");
+                    }
+
+                    if (String.IsNullOrEmpty(txtTelefono.Text))
+                    {
+                        MessageBox.Show("Complete el telefono");
+                    }
+
+                    if (String.IsNullOrEmpty(txtEmail.Text))
+                    {
+                        MessageBox.Show("Complete el email");
+                    }
+
+                    else
+                    {
+                        objetoCN.EditarCLientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text, idCliente);
+                        MessageBox.Show("se edito correctamente");
+                        MostrarClientes();
+                        limpiarForm();
+                        Editar = false;
+
+                    }
+                   
                 }
                 catch (Exception ex)
                 {
@@ -116,6 +165,11 @@ namespace Presentation
                 objetoCN.EliminarClientes(idCliente);
                 MessageBox.Show("Eliminado correctamente");
                 MostrarClientes();
+
+                txtNombre.Text = "";
+                txtApellido.Text="";
+                txtTelefono.Text = "";
+                txtEmail.Text = "";
             }
             else
                 MessageBox.Show("seleccione una fila por favor");

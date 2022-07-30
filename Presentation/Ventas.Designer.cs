@@ -81,6 +81,9 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnConsultarTotal = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -289,7 +292,7 @@
             this.btnAgregarProductos.TabIndex = 33;
             this.btnAgregarProductos.Text = "Agregar productos";
             this.btnAgregarProductos.UseVisualStyleBackColor = true;
-            this.btnAgregarProductos.Click += new System.EventHandler(this.btnConfirmar_Click);
+            this.btnAgregarProductos.Click += new System.EventHandler(this.btnAgregarProductos_Click);
             // 
             // btnCalcularTotal
             // 
@@ -297,7 +300,7 @@
             this.btnCalcularTotal.Name = "btnCalcularTotal";
             this.btnCalcularTotal.Size = new System.Drawing.Size(75, 37);
             this.btnCalcularTotal.TabIndex = 34;
-            this.btnCalcularTotal.Text = "Calcular total";
+            this.btnCalcularTotal.Text = "Calcular subtotal";
             this.btnCalcularTotal.UseVisualStyleBackColor = true;
             this.btnCalcularTotal.Click += new System.EventHandler(this.btnCalcularTotal_Click);
             // 
@@ -332,16 +335,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 256);
+            this.label2.Location = new System.Drawing.Point(273, 257);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 38;
-            this.label2.Text = "Total    $";
+            this.label2.Text = "SubTotal    $";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(355, 259);
+            this.lblTotal.Location = new System.Drawing.Point(364, 259);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 39;
@@ -449,13 +452,13 @@
             // 
             // btnConfirmarVenta
             // 
-            this.btnConfirmarVenta.Location = new System.Drawing.Point(648, 250);
+            this.btnConfirmarVenta.Location = new System.Drawing.Point(682, 293);
             this.btnConfirmarVenta.Name = "btnConfirmarVenta";
-            this.btnConfirmarVenta.Size = new System.Drawing.Size(75, 37);
+            this.btnConfirmarVenta.Size = new System.Drawing.Size(59, 94);
             this.btnConfirmarVenta.TabIndex = 51;
             this.btnConfirmarVenta.Text = "Confirmar Venta";
             this.btnConfirmarVenta.UseVisualStyleBackColor = true;
-            this.btnConfirmarVenta.Click += new System.EventHandler(this.btnAgregar_Productos_Click);
+            this.btnConfirmarVenta.Click += new System.EventHandler(this.btnConfirmarVenta_Click);
             // 
             // dataGridView2
             // 
@@ -486,7 +489,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(182, 293);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(541, 94);
+            this.dataGridView2.Size = new System.Drawing.Size(494, 94);
             this.dataGridView2.TabIndex = 52;
             // 
             // Column1
@@ -569,12 +572,43 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // btnConsultarTotal
+            // 
+            this.btnConsultarTotal.Location = new System.Drawing.Point(570, 247);
+            this.btnConsultarTotal.Name = "btnConsultarTotal";
+            this.btnConsultarTotal.Size = new System.Drawing.Size(75, 36);
+            this.btnConsultarTotal.TabIndex = 55;
+            this.btnConsultarTotal.Text = "Consultar total";
+            this.btnConsultarTotal.UseVisualStyleBackColor = true;
+            this.btnConsultarTotal.Click += new System.EventHandler(this.btnConsultarTotal_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(651, 256);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 16);
+            this.label12.TabIndex = 56;
+            this.label12.Text = "Total    $";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(718, 259);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 57;
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.btnConsultarTotal);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox2);
@@ -671,5 +705,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnConsultarTotal;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

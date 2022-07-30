@@ -16,6 +16,7 @@ namespace Presentation
 {
     public partial class Log_in : Form
     {
+        Principal p = new Principal();
        
         public Log_in()
         {
@@ -36,12 +37,38 @@ namespace Presentation
                     if (validLogin==true)
                     {
                         try{
-                            SessionManager.Login();
-                            Principal principal = new Principal();
-                            MessageBox.Show("Welcome " + UserLoginCache.firstName + ", " + UserLoginCache.position);
-                            principal.Show();
-                            principal.FormClosed += Logout;
-                            SessionManager _session = SessionManager.GetInstance;
+                            if (cmbIdiomas.Text == "Español")
+                            {
+                               
+
+                                SessionManager.Login();
+                                Principal principal = new Principal();
+                                MessageBox.Show("Welcome " + UserLoginCache.firstName + ", " + UserLoginCache.position);
+                                principal.Show();
+                                principal.FormClosed += Logout;
+                                SessionManager _session = SessionManager.GetInstance;
+
+                                CargarIdiomaEspañol();
+                            }
+
+                            if (cmbIdiomas.Text == "English")
+                            {
+                                
+
+                                SessionManager.Login();
+                                p = new Principal();
+
+                                CargarIdiomasEnglishP();
+
+                                MessageBox.Show("Welcome " + UserLoginCache.firstName + ", " + UserLoginCache.position);
+                                p.Show();
+                                p.FormClosed += Logout;
+                                SessionManager _session = SessionManager.GetInstance;
+
+                                
+
+                            }
+                            
 
                             //this.Close();
                         }
@@ -100,23 +127,21 @@ namespace Presentation
             txtUsername.Text = Idiomas.English.txtUsername;
             label1.Text = Idiomas.English.label1;
             label4.Text = Idiomas.English.label4;
-            
+            btnSeleccionar.Text = Idiomas.English.btnSeleccionar;
+            btnLogin.Text = Idiomas.English.btnLogin;
         }
 
-
-        private void btnSeleccionar_Click(object sender, EventArgs e)
+        public void CargarIdiomasEnglishP()
         {
-            if (cmbIdiomas.Text == "Español")
-            {
-                CargarIdiomaEspañol();
-            }
 
-            if (cmbIdiomas.Text == "English")
-            {
-                CargarIdiomaEnglish();
-
-            }
+            p.btnGestionarClientes.Text = Idiomas.English.btnGestionarClientes;
+            p.btnGestionar_Usuarios.Text = Idiomas.English.btnGestionar_Usuarios;
+            p.btnStock.Text = Idiomas.English.btnStock;
+            p.button1.Text = Idiomas.English.button1;
+            p.btnLogout.Text = Idiomas.English.btnLogout;
+            p.labelBienvenidos.Text = Idiomas.English.labelBienvenidos;
         }
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {

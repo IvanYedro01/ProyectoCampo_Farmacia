@@ -61,11 +61,65 @@ namespace Presentation.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Manage users.
+        /// </summary>
+        internal static string btnGestionar_Usuarios {
+            get {
+                return ResourceManager.GetString("btnGestionar_Usuarios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Manage clients.
+        /// </summary>
+        internal static string btnGestionarClientes {
+            get {
+                return ResourceManager.GetString("btnGestionarClientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Login.
+        /// </summary>
+        internal static string btnLogin {
+            get {
+                return ResourceManager.GetString("btnLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Log out.
+        /// </summary>
+        internal static string btnLogout {
+            get {
+                return ResourceManager.GetString("btnLogout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Select.
         /// </summary>
         internal static string btnSeleccionar {
             get {
                 return ResourceManager.GetString("btnSeleccionar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Stock.
+        /// </summary>
+        internal static string btnStock {
+            get {
+                return ResourceManager.GetString("btnStock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sales.
+        /// </summary>
+        internal static string button1 {
+            get {
+                return ResourceManager.GetString("button1", resourceCulture);
             }
         }
         
@@ -93,6 +147,15 @@ namespace Presentation.Idiomas {
         internal static string label4 {
             get {
                 return ResourceManager.GetString("label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a WELCOME.
+        /// </summary>
+        internal static string labelBienvenidos {
+            get {
+                return ResourceManager.GetString("labelBienvenidos", resourceCulture);
             }
         }
         

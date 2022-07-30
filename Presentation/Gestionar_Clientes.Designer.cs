@@ -33,6 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestionar_Clientes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.farmaciaDataSet3 = new Presentation.farmaciaDataSet3();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -47,20 +49,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.farmaciaDataSet3 = new Presentation.farmaciaDataSet3();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientesTableAdapter = new Presentation.farmaciaDataSet3TableAdapters.ClientesTableAdapter();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaciaDataSet3)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaciaDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -81,10 +81,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.nombreDataGridViewTextBoxColumn,
-            this.apellidoDataGridViewTextBoxColumn,
-            this.telefonoDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
+            this.Nombre,
+            this.Apellido,
+            this.Telefono,
+            this.Email});
             this.dataGridView1.DataSource = this.clientesBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
@@ -100,6 +100,16 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(543, 210);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.farmaciaDataSet3;
+            // 
+            // farmaciaDataSet3
+            // 
+            this.farmaciaDataSet3.DataSetName = "farmaciaDataSet3";
+            this.farmaciaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // flowLayoutPanel1
             // 
@@ -264,16 +274,6 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "Email";
             // 
-            // farmaciaDataSet3
-            // 
-            this.farmaciaDataSet3.DataSetName = "farmaciaDataSet3";
-            this.farmaciaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.farmaciaDataSet3;
-            // 
             // clientesTableAdapter
             // 
             this.clientesTableAdapter.ClearBeforeFill = true;
@@ -285,33 +285,33 @@
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
             // 
-            // nombreDataGridViewTextBoxColumn
+            // Nombre
             // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
-            // apellidoDataGridViewTextBoxColumn
+            // Apellido
             // 
-            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Apellido.DataPropertyName = "Apellido";
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
             // 
-            // telefonoDataGridViewTextBoxColumn
+            // Telefono
             // 
-            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
-            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Telefono.DataPropertyName = "Telefono";
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
             // 
-            // emailDataGridViewTextBoxColumn
+            // Email
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // Gestionar_Clientes
             // 
@@ -336,11 +336,11 @@
             this.Text = "Gestionar_Clientes";
             this.Load += new System.EventHandler(this.Gestionar_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farmaciaDataSet3)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.farmaciaDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,9 +367,9 @@
         private System.Windows.Forms.BindingSource clientesBindingSource;
         private farmaciaDataSet3TableAdapters.ClientesTableAdapter clientesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }

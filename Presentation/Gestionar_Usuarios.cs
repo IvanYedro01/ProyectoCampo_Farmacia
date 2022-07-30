@@ -24,13 +24,48 @@ namespace Presentation
         {
             try
             {
-                objectDOM.InsertUser(txtloginName.Text, txtpassword.Text, txtfirstName.Text, txtlastName.Text, cmbposition.Text, txtemail.Text);
-                MessageBox.Show("Insert correctly");
+                if (String.IsNullOrEmpty(txtloginName.Text))
+                {
+                    MessageBox.Show("Complete el nombre de inicio");
+                }
+
+                if (String.IsNullOrEmpty(txtpassword.Text))
+                {
+                    MessageBox.Show("Complete la contraseña");
+                }
+
+                if (String.IsNullOrEmpty(txtfirstName.Text))
+                {
+                    MessageBox.Show("Complete el nombre");
+                }
+
+                if (String.IsNullOrEmpty(txtlastName.Text))
+                {
+                    MessageBox.Show("Complete el apellido");
+                }
+
+                if (String.IsNullOrEmpty(cmbposition.Text))
+                {
+                    MessageBox.Show("Complete la posicion");
+                }
+
+                if (String.IsNullOrEmpty(txtemail.Text))
+                {
+                    MessageBox.Show("Complete el email");
+                }
+
+                else
+                {
+                    objectDOM.InsertUser(txtloginName.Text, txtpassword.Text, txtfirstName.Text, txtlastName.Text, cmbposition.Text, txtemail.Text);
+                    MessageBox.Show("Se ha insertado correctamente");
+                }
+
+               
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("data could not be inserted: " + ex);
+                MessageBox.Show("El nombre de inicio ya existe");
             }
         }
 
@@ -42,6 +77,11 @@ namespace Presentation
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

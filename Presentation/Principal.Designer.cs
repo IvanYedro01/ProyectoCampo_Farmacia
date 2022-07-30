@@ -41,7 +41,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.Tittle = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelBienvenidos = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.VerticalMain = new System.Windows.Forms.Panel();
@@ -176,7 +176,7 @@
             // 
             this.Tittle.BackColor = System.Drawing.Color.SeaGreen;
             this.Tittle.Controls.Add(this.pictureBox9);
-            this.Tittle.Controls.Add(this.label1);
+            this.Tittle.Controls.Add(this.labelBienvenidos);
             this.Tittle.Controls.Add(this.pictureBox4);
             this.Tittle.Controls.Add(this.pictureBox2);
             this.Tittle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -196,15 +196,15 @@
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
-            // label1
+            // labelBienvenidos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(237, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "BIENVENIDOS";
+            this.labelBienvenidos.AutoSize = true;
+            this.labelBienvenidos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBienvenidos.Location = new System.Drawing.Point(237, 12);
+            this.labelBienvenidos.Name = "labelBienvenidos";
+            this.labelBienvenidos.Size = new System.Drawing.Size(109, 19);
+            this.labelBienvenidos.TabIndex = 6;
+            this.labelBienvenidos.Text = "BIENVENIDOS";
             // 
             // pictureBox4
             // 
@@ -448,21 +448,14 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Button btnGestionar_Usuarios;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Contenedor;
         private System.Windows.Forms.Panel Tittle;
         private System.Windows.Forms.Panel VerticalMain;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnBitacora;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnGestionarClientes;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -473,6 +466,13 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer horafecha;
+        public System.Windows.Forms.Button btnGestionar_Usuarios;
+        public System.Windows.Forms.Button btnLogout;
+        public System.Windows.Forms.Button btnBitacora;
+        public System.Windows.Forms.Label labelBienvenidos;
+        public System.Windows.Forms.Button btnGestionarClientes;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnStock;
     }
 }
 

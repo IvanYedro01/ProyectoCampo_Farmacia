@@ -56,10 +56,39 @@ namespace Presentation
             {
                 try
                 {
-                    objetoCN.InsertarPRod(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text);
-                    MessageBox.Show("se inserto correctamente");
-                    MostrarProdctos();
-                    limpiarForm();
+                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    {
+                        MessageBox.Show("Complete el nombre");
+                    }
+
+                    if (String.IsNullOrEmpty(txtDescripcion.Text))
+                    {
+                        MessageBox.Show("Complete la descripcion");
+                    }
+
+                    if (String.IsNullOrEmpty(txtMarca.Text))
+                    {
+                        MessageBox.Show("Complete la marca");
+                    }
+
+                    if (String.IsNullOrEmpty(txtPrecio.Text))
+                    {
+                        MessageBox.Show("Complete el precio");
+                    }
+
+                    if (String.IsNullOrEmpty(txtStock.Text))
+                    {
+                        MessageBox.Show("Complete el stock");
+                    }
+
+                    else
+                    {
+                        objetoCN.InsertarPRod(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text);
+                        MessageBox.Show("se inserto correctamente");
+                        MostrarProdctos();
+                        limpiarForm();
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
@@ -71,11 +100,40 @@ namespace Presentation
             {
                 try
                 {
-                    objetoCN.EditarProd(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text, idProducto);
-                    MessageBox.Show("se edito correctamente");
-                    MostrarProdctos();
-                    limpiarForm();
-                    Editar = false;
+                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    {
+                        MessageBox.Show("Complete el nombre");
+                    }
+
+                    if (String.IsNullOrEmpty(txtDescripcion.Text))
+                    {
+                        MessageBox.Show("Complete la descripcion");
+                    }
+
+                    if (String.IsNullOrEmpty(txtMarca.Text))
+                    {
+                        MessageBox.Show("Complete la marca");
+                    }
+
+                    if (String.IsNullOrEmpty(txtPrecio.Text))
+                    {
+                        MessageBox.Show("Complete el precio");
+                    }
+
+                    if (String.IsNullOrEmpty(txtStock.Text))
+                    {
+                        MessageBox.Show("Complete el stock");
+                    }
+
+                    else
+                    {
+                        objetoCN.EditarProd(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text, idProducto);
+                        MessageBox.Show("se edito correctamente");
+                        MostrarProdctos();
+                        limpiarForm();
+                        Editar = false;
+                    }
+                   
                 }
                 catch (Exception ex)
                 {
