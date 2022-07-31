@@ -42,9 +42,13 @@ namespace Presentation
         {
             if (UserLoginCache.position==Positions.Vendedor)
             {
-                btnGestionar_Usuarios.Enabled = false;   
+                btnGestionar_Usuarios.Enabled = false;
+                btnBitacora.Enabled = false;
+                
             }
-}
+
+
+        }
 
         private void LoadUserData()
         {
@@ -75,14 +79,26 @@ namespace Presentation
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to log out? ", "Warning",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                this.Close();
+            if (btnLogout.Text=="Cerrar Sesion")
+            {
+                if (MessageBox.Show("Esta seguro de cerrar sesion? ", "Advertencia",
+              MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    this.Close();
                 SessionManager.Logout();
                 SessionManager _session = SessionManager.GetInstance;
-            {
-
+               
             }
+
+            if (btnLogout.Text=="Log out")
+            {
+                if (MessageBox.Show("Are you sure to log out? ", "Warning",
+              MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    this.Close();
+                SessionManager.Logout();
+                SessionManager _session = SessionManager.GetInstance;
+              
+            }
+           
         }
 
 

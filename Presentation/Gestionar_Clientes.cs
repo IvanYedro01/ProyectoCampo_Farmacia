@@ -57,38 +57,78 @@ namespace Presentation
             {
                 try
                 {
-                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    if (btnGuardar.Text=="Guardar")
                     {
-                       MessageBox.Show("Complete el nombre");
-                    }
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete el nombre");
+                        }
 
-                    if (String.IsNullOrEmpty(txtApellido.Text))
-                    {
-                        MessageBox.Show("Complete el apellido");
-                    }
+                        if (String.IsNullOrEmpty(txtApellido.Text))
+                        {
+                            MessageBox.Show("Complete el apellido");
+                        }
 
-                    if (String.IsNullOrEmpty(txtTelefono.Text))
-                    {
-                        MessageBox.Show("Complete el telefono");
-                    }
+                        if (String.IsNullOrEmpty(txtTelefono.Text))
+                        {
+                            MessageBox.Show("Complete el telefono");
+                        }
 
-                    if (String.IsNullOrEmpty(txtEmail.Text))
-                    {
-                        MessageBox.Show("Complete el email");
+                        if (String.IsNullOrEmpty(txtEmail.Text))
+                        {
+                            MessageBox.Show("Complete el email");
+                        }
+                        else
+                        {
+                            objetoCN.InsertarClientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text);
+                            MessageBox.Show("Se inserto correctamente");
+                            MostrarClientes();
+                            limpiarForm();
+                        }
                     }
+                    if (btnGuardar.Text == "Save")
+                    {
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete the name");
+                        }
 
-                    else
-                    {
-                        objetoCN.InsertarClientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text);
-                        MessageBox.Show("se inserto correctamente");
-                        MostrarClientes();
-                        limpiarForm();
+                        if (String.IsNullOrEmpty(txtApellido.Text))
+                        {
+                            MessageBox.Show("Complete the lastname");
+                        }
+
+                        if (String.IsNullOrEmpty(txtTelefono.Text))
+                        {
+                            MessageBox.Show("Complete the phone");
+                        }
+
+                        if (String.IsNullOrEmpty(txtEmail.Text))
+                        {
+                            MessageBox.Show("Complete the email");
+                        }
+                        else
+                        {
+                            objetoCN.InsertarClientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text);
+                            MessageBox.Show("Insert correctly");
+                            MostrarClientes();
+                            limpiarForm();
+                        }
                     }
+      
                    
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Por favor ingrese bien los datos " );
+                    if (btnGuardar.Text=="Guardar")
+                    {
+                        MessageBox.Show("Por favor ingrese bien los datos ");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Enter the data correctly please");
+                    }
+                    
                 }
             }
             //EDITAR
@@ -96,40 +136,82 @@ namespace Presentation
             {
                 try
                 {
-                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    if (btnEditar.Text == "Editar")
                     {
-                        MessageBox.Show("Complete el nombre");
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete el nombre");
+                        }
+
+                        if (String.IsNullOrEmpty(txtApellido.Text))
+                        {
+                            MessageBox.Show("Complete el apellido");
+                        }
+
+                        if (String.IsNullOrEmpty(txtTelefono.Text))
+                        {
+                            MessageBox.Show("Complete el telefono");
+                        }
+
+                        if (String.IsNullOrEmpty(txtEmail.Text))
+                        {
+                            MessageBox.Show("Complete el email");
+                        }
+                        else
+                        {
+                            objetoCN.EditarCLientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text, idCliente);
+                            MessageBox.Show("Se edito correctamente");
+                            MostrarClientes();
+                            limpiarForm();
+                            Editar = false;
+                        }
+                    
+                    }
+                    if (btnEditar.Text == "Edit")
+                    {
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete the name");
+                        }
+
+                        if (String.IsNullOrEmpty(txtApellido.Text))
+                        {
+                            MessageBox.Show("Complete the lastname");
+                        }
+
+                        if (String.IsNullOrEmpty(txtTelefono.Text))
+                        {
+                            MessageBox.Show("Complete the phone");
+                        }
+
+                        if (String.IsNullOrEmpty(txtEmail.Text))
+                        {
+                            MessageBox.Show("Complete the email");
+                        }
+                        else
+                        {
+                            objetoCN.EditarCLientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text, idCliente);
+                            MessageBox.Show("Edit correctly");
+                            MostrarClientes();
+                            limpiarForm();
+                            Editar = false;
+                        }
                     }
 
-                    if (String.IsNullOrEmpty(txtApellido.Text))
-                    {
-                        MessageBox.Show("Complete el apellido");
-                    }
-
-                    if (String.IsNullOrEmpty(txtTelefono.Text))
-                    {
-                        MessageBox.Show("Complete el telefono");
-                    }
-
-                    if (String.IsNullOrEmpty(txtEmail.Text))
-                    {
-                        MessageBox.Show("Complete el email");
-                    }
-
-                    else
-                    {
-                        objetoCN.EditarCLientes(txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtEmail.Text, idCliente);
-                        MessageBox.Show("se edito correctamente");
-                        MostrarClientes();
-                        limpiarForm();
-                        Editar = false;
-
-                    }
+                  
                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("no se pudo editar los datos por: " + ex);
+                    if (btnEditar.Text=="Editar")
+                    {
+                        MessageBox.Show("No se pudo editar los datos por: " + ex);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Could not be edit the data because: " + ex);
+                    }
+                   
                 }
             }
         }
@@ -154,25 +236,58 @@ namespace Presentation
                 idCliente = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
             }
             else
-                MessageBox.Show("seleccione una fila por favor");
+            {
+                if (btnEditar.Text=="Editar")
+                {
+                    MessageBox.Show("Seleccione una fila por favor");
+                }
+                else
+                {
+                    MessageBox.Show("Select a row please");
+                }
+            }
+               
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (btnEliminar.Text=="Eliminar")
             {
-                idCliente = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
-                objetoCN.EliminarClientes(idCliente);
-                MessageBox.Show("Eliminado correctamente");
-                MostrarClientes();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    idCliente = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                    objetoCN.EliminarClientes(idCliente);
+                    MessageBox.Show("Eliminado correctamente");
+                    MostrarClientes();
 
-                txtNombre.Text = "";
-                txtApellido.Text="";
-                txtTelefono.Text = "";
-                txtEmail.Text = "";
+                    txtNombre.Text = "";
+                    txtApellido.Text = "";
+                    txtTelefono.Text = "";
+                    txtEmail.Text = "";
+                }
+                else
+                    MessageBox.Show("seleccione una fila por favor");
             }
-            else
-                MessageBox.Show("seleccione una fila por favor");
+
+            if (btnEliminar.Text == "Delete")
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    idCliente = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                    objetoCN.EliminarClientes(idCliente);
+                    MessageBox.Show("Delete correctly");
+                    MostrarClientes();
+
+                    txtNombre.Text = "";
+                    txtApellido.Text = "";
+                    txtTelefono.Text = "";
+                    txtEmail.Text = "";
+                }
+                else
+                    MessageBox.Show("Select a row please");
+            }
+
+
         }
     }
 }

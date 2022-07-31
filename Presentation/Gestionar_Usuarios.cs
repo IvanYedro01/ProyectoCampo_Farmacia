@@ -24,48 +24,96 @@ namespace Presentation
         {
             try
             {
-                if (String.IsNullOrEmpty(txtloginName.Text))
+                if (btnSignIn.Text=="Registrar")
                 {
-                    MessageBox.Show("Complete el nombre de inicio");
-                }
+                    if (String.IsNullOrEmpty(txtloginName.Text))
+                    {
+                        MessageBox.Show("Complete el nombre de inicio");
+                    }
 
-                if (String.IsNullOrEmpty(txtpassword.Text))
-                {
-                    MessageBox.Show("Complete la contraseña");
-                }
+                    if (String.IsNullOrEmpty(txtpassword.Text))
+                    {
+                        MessageBox.Show("Complete la contraseña");
+                    }
 
-                if (String.IsNullOrEmpty(txtfirstName.Text))
-                {
-                    MessageBox.Show("Complete el nombre");
-                }
+                    if (String.IsNullOrEmpty(txtfirstName.Text))
+                    {
+                        MessageBox.Show("Complete el nombre");
+                    }
 
-                if (String.IsNullOrEmpty(txtlastName.Text))
-                {
-                    MessageBox.Show("Complete el apellido");
-                }
+                    if (String.IsNullOrEmpty(txtlastName.Text))
+                    {
+                        MessageBox.Show("Complete el apellido");
+                    }
 
-                if (String.IsNullOrEmpty(cmbposition.Text))
-                {
-                    MessageBox.Show("Complete la posicion");
-                }
+                    if (String.IsNullOrEmpty(cmbposition.Text))
+                    {
+                        MessageBox.Show("Complete la posicion");
+                    }
 
-                if (String.IsNullOrEmpty(txtemail.Text))
-                {
-                    MessageBox.Show("Complete el email");
+                    if (String.IsNullOrEmpty(txtemail.Text))
+                    {
+                        MessageBox.Show("Complete el email");
+                    }
+                    else
+                    {
+                        objectDOM.InsertUser(txtloginName.Text, txtpassword.Text, txtfirstName.Text, txtlastName.Text, cmbposition.Text, txtemail.Text);
+                        MessageBox.Show("Se ha insertado correctamente");
+                    }
                 }
 
                 else
                 {
-                    objectDOM.InsertUser(txtloginName.Text, txtpassword.Text, txtfirstName.Text, txtlastName.Text, cmbposition.Text, txtemail.Text);
-                    MessageBox.Show("Se ha insertado correctamente");
+                    if (String.IsNullOrEmpty(txtloginName.Text))
+                    {
+                        MessageBox.Show("Complete the loginname");
+                    }
+
+                    if (String.IsNullOrEmpty(txtpassword.Text))
+                    {
+                        MessageBox.Show("Complete the password");
+                    }
+
+                    if (String.IsNullOrEmpty(txtfirstName.Text))
+                    {
+                        MessageBox.Show("Complete the name");
+                    }
+
+                    if (String.IsNullOrEmpty(txtlastName.Text))
+                    {
+                        MessageBox.Show("Complete the lastname");
+                    }
+
+                    if (String.IsNullOrEmpty(cmbposition.Text))
+                    {
+                        MessageBox.Show("Complete the position");
+                    }
+
+                    if (String.IsNullOrEmpty(txtemail.Text))
+                    {
+                        MessageBox.Show("Complete the email");
+                    }
+                    else
+                    {
+                        objectDOM.InsertUser(txtloginName.Text, txtpassword.Text, txtfirstName.Text, txtlastName.Text, cmbposition.Text, txtemail.Text);
+                        MessageBox.Show("Insert correcty");
+                    }
                 }
 
-               
 
             }
             catch (Exception)
             {
-                MessageBox.Show("El nombre de inicio ya existe");
+                if (btnSignIn.Text=="Registrar")
+                {
+                    MessageBox.Show("El nombre de inicio ya existe");
+                }
+                if (btnSignIn.Text=="Sign In")
+                {
+                    MessageBox.Show("The login name already exist");
+                }
+              
+              
             }
         }
 

@@ -81,8 +81,15 @@ namespace Presentation
             }
             catch 
             {
-
-                MessageBox.Show("Ingrese una cantidad");
+                if (btnSeleccionarCliente.Text=="Seleccionar Cliente")
+                {
+                    MessageBox.Show("Ingrese una cantidad");
+                }
+                else
+                {
+                    MessageBox.Show("Enter an amount");
+                }
+                
             }
            
         }
@@ -129,13 +136,29 @@ namespace Presentation
                     ventas.Insertar(Convert.ToString(row.Cells["Column1"].Value), Convert.ToString(row.Cells["Column2"].Value), Convert.ToString(row.Cells["Column3"].Value), Convert.ToString(row.Cells["Column4"].Value), Convert.ToString(row.Cells["Column5"].Value), Convert.ToString(row.Cells["Column6"].Value), Convert.ToDouble(row.Cells["Column7"].Value), Convert.ToInt32(row.Cells["Column8"].Value), Convert.ToDouble(row.Cells["Column9"].Value));
 
                 }
-                MessageBox.Show("Se ha registrado la venta");
 
-                this.productosTableAdapter.Fill(this.farmaciaDataSet.Productos);
+                if (btnConfirmarVenta.Text=="Confirmar Venta")
+                {
+                    MessageBox.Show("Se ha registrado la venta");
 
-                dataGridView2.Rows.Clear();
+                    this.productosTableAdapter.Fill(this.farmaciaDataSet.Productos);
 
-                btnConfirmarVenta.Enabled = false;
+                    dataGridView2.Rows.Clear();
+
+                    btnConfirmarVenta.Enabled = false;
+                }
+
+                else
+                {
+                    MessageBox.Show("The sale has been recorded");
+
+                    this.productosTableAdapter.Fill(this.farmaciaDataSet.Productos);
+
+                    dataGridView2.Rows.Clear();
+
+                    btnConfirmarVenta.Enabled = false;
+                }
+                
             }
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)
@@ -153,30 +176,65 @@ namespace Presentation
                     prod.ActualizarProd(Convert.ToString(resta), txtCodProducto.Text);
                     this.productosTableAdapter.Fill(this.farmaciaDataSet.Productos);
 
+                    if (btnAgregarProductos.Text == "Add Products")
+                    {
+                        MessageBox.Show("A product has been added");
+                        txtCantidad.Clear();
+                        txtCantidadVender.Clear();
 
-                    MessageBox.Show("Se ha agregado un producto");
+                        btnAgregarProductos.Enabled = false;
+                        btnCalcularTotal.Enabled = false;
+                        txtCantidadVender.Enabled = false;
 
+                        btnConsultarTotal.Enabled = true;
+                    }
 
-                    txtCantidad.Clear();
-                    txtCantidadVender.Clear();
+                    else
+                    {
+                        MessageBox.Show("Se ha agregado un producto");
+                        txtCantidad.Clear();
+                        txtCantidadVender.Clear();
 
-                    btnAgregarProductos.Enabled = false;
-                    btnCalcularTotal.Enabled = false;
-                    txtCantidadVender.Enabled = false;
-             
-                    btnConsultarTotal.Enabled = true;
+                        btnAgregarProductos.Enabled = false;
+                        btnCalcularTotal.Enabled = false;
+                        txtCantidadVender.Enabled = false;
+
+                        btnConsultarTotal.Enabled = true;
+                    }
+                    
+
+          
                 }
                 else
                 {
-                    MessageBox.Show("No hay suficiente stock");
-                    btnConfirmarVenta.Enabled = false;
+                    if (btnAgregarProductos.Text=="Agregar productos")
+                    {
+                        MessageBox.Show("No hay suficiente stock");
+                        btnConfirmarVenta.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not enough stock");
+                        btnConfirmarVenta.Enabled = false;
+                    }
+                   
                 }
             }
             else
             {
-                MessageBox.Show("No hay suficiente stock");
-                btnCalcularTotal.Enabled = false;
-                btnAgregarProductos.Enabled = false;
+                if (btnAgregarProductos.Text=="Agregar productos")
+                {
+                    MessageBox.Show("No hay suficiente stock");
+                    btnCalcularTotal.Enabled = false;
+                    btnAgregarProductos.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Not enough stock");
+                    btnCalcularTotal.Enabled = false;
+                    btnAgregarProductos.Enabled = false;
+                }
+               
 
             }
         }

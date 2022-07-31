@@ -48,7 +48,7 @@ namespace Presentation
 
                                 CargarIdiomaEspañolPrincipal();
 
-                                MessageBox.Show("Welcome " + UserLoginCache.firstName + ", " + UserLoginCache.position);
+                                MessageBox.Show("Bienvenido " + UserLoginCache.firstName + ", " + UserLoginCache.position);
                                 p.Show();
                                 p.FormClosed += Logout;
                                 SessionManager _session = SessionManager.GetInstance;
@@ -75,7 +75,7 @@ namespace Presentation
                             }
                             if (cmbIdiomas.Text=="")
                             {
-                                MessageBox.Show("Seleccione un idioma");
+                                MessageBox.Show("Seleccione un idioma/Select a language");
                             }
 
                             //this.Close();
@@ -87,11 +87,22 @@ namespace Presentation
                     }
                     else
                     {
-                        MsgError("Incorrect username or password entered.");
-                        txtPassword.Text="Password";
-                        txtUsername.Focus();
+                        if (cmbIdiomas.Text=="Español")
+                        {
+                            MsgError("Usuario o contraseña ingresada incorrecta.");
+                            txtPassword.Text = "Password";
+                            txtUsername.Focus();
+                        }
+                        if (cmbIdiomas.Text=="English")
+                        {
+                            MsgError("Incorrect username or password entered.");
+                            txtPassword.Text = "Password";
+                            txtUsername.Focus();
+                        }
+                       
                     }
                 }
+                    
                     else MsgError("Please enter password");
             }
                     else MsgError("Please enter username");
@@ -106,12 +117,25 @@ namespace Presentation
 
         private void Logout(object sender, FormClosedEventArgs e)
         {
-            txtPassword.Text="Password";
-            txtPassword.UseSystemPasswordChar = false;
-            txtUsername.Text="Username";
-            label1.Visible = false;
-            
-           
+            if (cmbIdiomas.Text=="Español")
+            {
+                txtPassword.Text = "Contraseña";
+                txtPassword.UseSystemPasswordChar = false;
+                txtUsername.Text = "Nombre";
+                label1.Visible = false;
+
+            }
+
+            if (cmbIdiomas.Text=="English")
+            {
+                txtPassword.Text = "Password";
+                txtPassword.UseSystemPasswordChar = false;
+                txtUsername.Text = "Username";
+                label1.Visible = false;
+
+            }
+
+
         }
 
         private void Log_in_Load(object sender, EventArgs e)

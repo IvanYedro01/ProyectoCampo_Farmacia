@@ -34,11 +34,24 @@ namespace Presentation
         
         private void limpiarForm()
         {
-            txtDescripcion.Text="Descricpcion";
-            txtMarca.Text = "Marca";
-            txtPrecio.Text= "Precio";
-            txtStock.Text="Stock";
-            txtNombre.Text="Nombre";
+            if (btnEliminar.Text=="Delete")
+            {
+                txtDescripcion.Text = "Description";
+                txtMarca.Text = "Mark";
+                txtPrecio.Text = "Price";
+                txtStock.Text = "Stock";
+                txtNombre.Text = "Name";
+            }
+
+            if (btnEliminar.Text=="Eliminar")
+            {
+                txtDescripcion.Text = "Descricpcion";
+                txtMarca.Text = "Marca";
+                txtPrecio.Text = "Precio";
+                txtStock.Text = "Stock";
+                txtNombre.Text = "Nombre";
+            }
+           
         }
       
 
@@ -56,43 +69,91 @@ namespace Presentation
             {
                 try
                 {
-                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    if (btnEditar.Text == "Editar")
                     {
-                        MessageBox.Show("Complete el nombre");
-                    }
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete el nombre");
+                        }
 
-                    if (String.IsNullOrEmpty(txtDescripcion.Text))
-                    {
-                        MessageBox.Show("Complete la descripcion");
-                    }
+                        if (String.IsNullOrEmpty(txtDescripcion.Text))
+                        {
+                            MessageBox.Show("Complete la descripcion");
+                        }
 
-                    if (String.IsNullOrEmpty(txtMarca.Text))
-                    {
-                        MessageBox.Show("Complete la marca");
-                    }
+                        if (String.IsNullOrEmpty(txtMarca.Text))
+                        {
+                            MessageBox.Show("Complete la marca");
+                        }
 
-                    if (String.IsNullOrEmpty(txtPrecio.Text))
-                    {
-                        MessageBox.Show("Complete el precio");
-                    }
+                        if (String.IsNullOrEmpty(txtPrecio.Text))
+                        {
+                            MessageBox.Show("Complete el precio");
+                        }
 
-                    if (String.IsNullOrEmpty(txtStock.Text))
-                    {
-                        MessageBox.Show("Complete el stock");
+                        if (String.IsNullOrEmpty(txtStock.Text))
+                        {
+                            MessageBox.Show("Complete el stock");
+                        }
+                        else
+                        {
+                            objetoCN.InsertarPRod(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text);
+                            MessageBox.Show("Se inserto correctamente");
+                            MostrarProdctos();
+                            limpiarForm();
+                        }
                     }
-
-                    else
+                    if (btnEditar.Text == "Edit")
                     {
-                        objetoCN.InsertarPRod(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text);
-                        MessageBox.Show("se inserto correctamente");
-                        MostrarProdctos();
-                        limpiarForm();
+
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete the name");
+                        }
+
+                        if (String.IsNullOrEmpty(txtDescripcion.Text))
+                        {
+                            MessageBox.Show("Complete the description");
+                        }
+
+                        if (String.IsNullOrEmpty(txtMarca.Text))
+                        {
+                            MessageBox.Show("Complete the mark");
+                        }
+
+                        if (String.IsNullOrEmpty(txtPrecio.Text))
+                        {
+                            MessageBox.Show("Complete the price");
+                        }
+
+                        if (String.IsNullOrEmpty(txtStock.Text))
+                        {
+                            MessageBox.Show("Complete the stock");
+                        }
+                        else
+                        {
+
+                            objetoCN.InsertarPRod(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text);
+                            MessageBox.Show("Insert correctly");
+                            MostrarProdctos();      
+                        }
+                   
+                     
+                     
                     }
                     
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                    if (btnGuardar.Text=="Guardar")
+                    {
+                        MessageBox.Show("No se pudo insertar los datos por: " + ex);
+                    }
+                    if (btnGuardar.Text=="Save")
+                    {
+                        MessageBox.Show("Data could not be inserted because: " + ex);
+                    }
+                   
                 }
             }
             //EDITAR
@@ -100,44 +161,93 @@ namespace Presentation
             {
                 try
                 {
-                    if (String.IsNullOrEmpty(txtNombre.Text))
+                    if (btnEditar.Text == "Editar")
                     {
-                        MessageBox.Show("Complete el nombre");
-                    }
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete el nombre");
+                        }
 
-                    if (String.IsNullOrEmpty(txtDescripcion.Text))
-                    {
-                        MessageBox.Show("Complete la descripcion");
-                    }
+                        if (String.IsNullOrEmpty(txtDescripcion.Text))
+                        {
+                            MessageBox.Show("Complete la descripcion");
+                        }
 
-                    if (String.IsNullOrEmpty(txtMarca.Text))
-                    {
-                        MessageBox.Show("Complete la marca");
-                    }
+                        if (String.IsNullOrEmpty(txtMarca.Text))
+                        {
+                            MessageBox.Show("Complete la marca");
+                        }
 
-                    if (String.IsNullOrEmpty(txtPrecio.Text))
-                    {
-                        MessageBox.Show("Complete el precio");
-                    }
+                        if (String.IsNullOrEmpty(txtPrecio.Text))
+                        {
+                            MessageBox.Show("Complete el precio");
+                        }
 
-                    if (String.IsNullOrEmpty(txtStock.Text))
-                    {
-                        MessageBox.Show("Complete el stock");
-                    }
+                        if (String.IsNullOrEmpty(txtStock.Text))
+                        {
+                            MessageBox.Show("Complete el stock");
+                        }
+                        else
+                        {
 
-                    else
-                    {
-                        objetoCN.EditarProd(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text, idProducto);
-                        MessageBox.Show("se edito correctamente");
-                        MostrarProdctos();
-                        limpiarForm();
-                        Editar = false;
+                           objetoCN.EditarProd(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text, idProducto);
+                           MessageBox.Show("Se edito correctamente");
+                           MostrarProdctos();
+                           limpiarForm();
+                           Editar = false;
+                            
+                        }
                     }
-                   
+                    if (btnEditar.Text == "Edit")
+                    {
+
+                        if (String.IsNullOrEmpty(txtNombre.Text))
+                        {
+                            MessageBox.Show("Complete the name");
+                        }
+
+                        if (String.IsNullOrEmpty(txtDescripcion.Text))
+                        {
+                            MessageBox.Show("Complete the description");
+                        }
+
+                        if (String.IsNullOrEmpty(txtMarca.Text))
+                        {
+                            MessageBox.Show("Complete the mark");
+                        }
+
+                        if (String.IsNullOrEmpty(txtPrecio.Text))
+                        {
+                            MessageBox.Show("Complete the price");
+                        }
+
+                        if (String.IsNullOrEmpty(txtStock.Text))
+                        {
+                            MessageBox.Show("Complete the stock");
+                        }
+                        else
+                        {
+                            objetoCN.EditarProd(txtNombre.Text, txtDescripcion.Text, txtMarca.Text, txtPrecio.Text, txtStock.Text, idProducto);
+                            MessageBox.Show("Edit correctly");
+                            MostrarProdctos();
+                            limpiarForm();
+                            Editar = false;
+                        }
+                    }   
                 }
+
                 catch (Exception ex)
                 {
-                    MessageBox.Show("no se pudo editar los datos por: " + ex);
+                    if (btnEditar.Text=="Edit")
+                    {
+                        MessageBox.Show("Data could not be edit because: " + ex);
+                    }
+
+                    if (btnEditar.Text=="Editar")
+                    {
+                        MessageBox.Show("No se pudo editar los datos por: " + ex);
+                    }
+                   
                 }
             }
         }
@@ -156,20 +266,48 @@ namespace Presentation
                 idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
             }
             else
-                MessageBox.Show("seleccione una fila por favor");
+            {
+                if (btnEditar.Text == "Editar")
+                {
+                    MessageBox.Show("Seleccione una fila por favor");
+                }
+                if (btnEditar.Text == "Edit")
+                {
+                    MessageBox.Show("Select a row please");
+                }
+            }
+             
+               
         }
 
         private void btnEliminar_Click_1(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (btnEliminar.Text=="Eliminar")
             {
-                idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
-                objetoCN.EliminarPRod(idProducto);
-                MessageBox.Show("Eliminado correctamente");
-                MostrarProdctos();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                    objetoCN.EliminarPRod(idProducto);
+                    MessageBox.Show("Eliminado correctamente");
+                    MostrarProdctos();
+                }
+                else
+                    MessageBox.Show("Seleccione una fila por favor");
             }
-            else
-                MessageBox.Show("seleccione una fila por favor");
+
+            if (btnEliminar.Text=="Delete")
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    idProducto = dataGridView1.CurrentRow.Cells["Id"].Value.ToString();
+                    objetoCN.EliminarPRod(idProducto);
+                    MessageBox.Show("Delete correctly");
+                    MostrarProdctos();
+                }
+                else
+                    MessageBox.Show("Select a row please");
+            }
+           
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
