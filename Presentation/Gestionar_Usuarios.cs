@@ -104,14 +104,7 @@ namespace Presentation
             }
             catch (Exception)
             {
-                if (btnSignIn.Text=="Registrar")
-                {
-                    MessageBox.Show("El nombre de inicio ya existe");
-                }
-                if (btnSignIn.Text=="Sign In")
-                {
-                    MessageBox.Show("The login name already exist");
-                }
+                MessageBox.Show("Verifique los datos");
               
               
             }
