@@ -93,6 +93,14 @@ namespace DataAcces
             {
 
             }
+            if (UserLoginCache.position==Positions.Cajero)
+            {
+
+            }
+            if (UserLoginCache.position==Positions.Almacenista)
+            {
+
+            }
         }
 
         }

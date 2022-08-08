@@ -46,6 +46,21 @@ namespace Presentation
                 btnBitacora.Enabled = false;
                 
             }
+            if (UserLoginCache.position==Positions.Cajero)
+            {
+                btnGestionar_Usuarios.Enabled = false;
+                btnGestionarClientes.Enabled = false;
+                btnBitacora.Enabled = false;
+                btnStock.Enabled = false;
+            }
+            if (UserLoginCache.position==Positions.Almacenista)
+            {
+                btnGestionar_Usuarios.Enabled = false;
+                btnGestionarClientes.Enabled = false;
+                btnBitacora.Enabled = false;
+                button1.Enabled = false;
+
+            }
 
 
         }

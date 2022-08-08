@@ -62,7 +62,9 @@
             this.cmbposition.FormattingEnabled = true;
             this.cmbposition.Items.AddRange(new object[] {
             "administrador",
-            "vendedor"});
+            "vendedor",
+            "cajero",
+            "almacenista"});
             this.cmbposition.Location = new System.Drawing.Point(158, 216);
             this.cmbposition.Name = "cmbposition";
             this.cmbposition.Size = new System.Drawing.Size(96, 24);

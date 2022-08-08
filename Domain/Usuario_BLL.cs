@@ -33,6 +33,14 @@ namespace Domain
             {
 
             }
+            if (UserLoginCache.position==Positions.Cajero)
+            {
+
+            }
+            if (UserLoginCache.position==Positions.Almacenista)
+            {
+
+            }
         }
     }
 

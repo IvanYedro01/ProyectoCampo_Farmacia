@@ -11,5 +11,11 @@ namespace Services.Cache
         public const string Administrador = "administrador";
 
         public const string Vendedor = "vendedor";
+
+        public const string Cajero = "cajero";
+
+        public const string Almacenista = "almacenista";
+
+
     }
 }
